@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Casar & Amar</title>
+		<link rel="stylesheet" TYPE="text/css" href="style.css">
+		<script type="text/javascript">
+			contador=1
+			setInterval(function () {
+
+				console.log(contador)
+				elemento = document.getElementById("slide"+contador)
+				elemento.click()
+				if(contador<4)
+					contador=contador+1
+				else
+					contador=1	 
+				
+			}, 3000);
+	</script>
+	</head>
+	<body>
+		<h1> Casar & Amar </h1>
+		<div class="container">
+			<div class="slides">
+					<ul class="slider">
+							<li>
+								<input type="radio" id="slide1" name="slide" checked>
+								<label for= "slide1"> </label>
+								<img src="img/slide1.webp" alt=" Sombra de casal ao por do sol. Ela está vestida de noiva e com um buquê na mão, segurando a mão dele."/>
+							</li>
+							<li>
+								<input type="radio" id="slide2" name="slide" checked>
+								<label for= "slide2"> </label>
+								<img src="img/slide2.webp" alt="Casal sentado em banco de madeira. Vemos as costas do casal e ao fundo da imagem, uma casa branca e várias árvores no jardim."/>
+							</li>
+							<li>
+								<input type="radio" id="slide3" name="slide" checked>
+								<label for= "slide3"> </label>
+								<img src="img/slide3.webp" alt="Casal na floresta. Ela está vestida de noiva e sorri enquanto o noivo a segura no ar. Ao lado deles há uma cesta de flores."/>
+							</li>
+							<li>
+								<input type="radio" id="slide4" name="slide" checked>
+								<label for= "slide4"> </label>
+								<img src="img/slide4.webp" alt="Casal de noivos de braços dados. Noivo de terno azul marinho e noiva segurando um buque de rosas brancas e rosas."/>
+							</li>
+						</ul>		
+			</div>
+
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/2cBH8zWVfsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>	
+		<hr/>
+		<div class="container">
+			<a class=" link" href= "C:/dev/AULA_programacao/casar/musicas.html" target="_blank">
+				Músicas para casamento
+			</a>
+			<a class="link" href="C:/dev/AULA_programacao/casar/listas.html" target="_blank">
+				Lista de preparativos para casamento
+			</a>
+		</div>
+		<hr/>
+		<p class="rodape"> Camila Nizer Porfirio. 1ª fase ADS-FMP.</p>
+		<p class="rodape"><a class="rodape" href="https://wa.me/+5548991223755" target="_blank"> Clique aqui para falar comigo via Whatsapp</a></p>
+
+		
+	</body>
+</html>
